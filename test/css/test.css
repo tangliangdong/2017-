@@ -1,0 +1,51 @@
+.window{
+    -webkit-perspective:800;
+    perspective: 800;
+    perspective-origin: 500px -300px;
+}
+.cube{
+    position: relative;
+    margin: 100px;
+}
+.cube .surface{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    transform-style:preserve-3d;
+}
+
+.surface1{
+    background: blue;
+    top: 0;
+    left: 0;
+    opacity: 1;
+}
+
+.surface2{
+    background: black;
+    transform: rotateX(90deg) translateX(-6px) translateY(-61px) translateZ(46px);
+    left: 0;
+    opacity: 1;
+}
+
+.surface3{
+    background: #eee;
+    transform: rotateY(-90deg) translateX(-40px) translateY(-4px) translateZ(-54px);
+    opacity: 1;
+}
+.surface4{
+    background: yellow;
+    transform: rotateX(90deg) translateZ(-50px) translateY(-50px);
+    opacity: 1;
+}
+.surface5{
+    background: green;
+    transform: translateZ(-100px);
+    opacity: 1;
+}
+
+.surface6{
+    background: red;
+    transform: rotateY(90deg) translateX(50px) translateZ(-50px);
+    opacity: 1;
+}
